@@ -2,6 +2,12 @@ body {
     color: #0000FF;
     font-size: 15px;
     line-height: 1.5;
+    text-align: center;
+}
+#wrap{
+    width: 770px;
+    margin: 0 auto;
+    text-align: left;
 }
 h2  {
     font-size: 185%;
@@ -13,6 +19,7 @@ h3  {
     padding: 5px;
     border: 1px solid #668800;
     font-size: 154%;
+    clear: left;
 }
 h4  {
     font-size: 124%;
@@ -23,6 +30,7 @@ address{
     text-align: right;
     border-top: 1px solid #000000;
     padding-top: 10px;
+    clear: left;
 }
 table{
     border: 1px solid #666666;
@@ -37,4 +45,28 @@ td{
     border: 1px solid #999999;
     padding: 10px;
     background-color: #eeeeee;
+}
+.itemphoto{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+ul{
+    background-color: #88aa00;
+    padding: 10px 20px;
+}
+li{
+    list-style: type:none;
+    display: inline;
+    padding-right: 20px;
+}
+li a:link{
+    color: #ffffff;/*未訪問は白*/
+}
+li a:visited{
+    color: #eeee00;/*訪問済は黄*/
+}
+li a:hover{
+    color: #000000;
+    text-decoration: none;/*ポインタを合わせた時は黒*/
 }
