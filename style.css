@@ -51,6 +51,7 @@ td{
     margin-right: 20px;
     margin-bottom: 50px;
 }
+/*
 ul{
     background-color: #88aa00;
     padding: 10px 20px;
@@ -61,12 +62,49 @@ li{
     padding-right: 20px;
 }
 li a:link{
-    color: #ffffff;/*未訪問は白*/
-}
+    color: #ffffff;/
 li a:visited{
-    color: #eeee00;/*訪問済は黄*/
+    color: #eeee00; 
 }
 li a:hover{
     color: #000000;
-    text-decoration: none;/*ポインタを合わせた時は黒*/
+    text-decoration: none; 
+}
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    overflow: hidden;
+    background-color: #88aa00;
+}
+li {
+    float: left;
+    margin-right: 0px;
+    width: 100px;
+    text-align: center;
+    border-right: solid; 1px #ffffff;
+}
+li:first-chiild a {
+    border-left: solid 1px #ffffff;
+}
+li a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: solid 5px transparent;
+}
+li a:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+li a:visited{
+    color: #eeee00;
+    text-decoration: none;
+}
+li a:hover {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: solid 5px #CC9900;
 }
