@@ -1,55 +1,64 @@
 body {
-    color: #0000FF;
-    font-size: 15px;
-    line-height: 1.5;
-    text-align: center;
-}
+    color: #000000;/*黒*/
+    font-size: 15px;/*フォントのサイズ*/
+    line-height: 1.5;/*行の高さ*/
+    text-align: center;/*行揃えの位置・均等割付(中央寄せ)*/
+}/**/
 #wrap{
-    width: 770px;
-    margin: 0 auto;
-    text-align: left;
+    width: 690px;/*ボックス領域の幅を指定する*/
+    margin: 0 auto;/*要素の外側の余白を指定する(autoにすると、左右中央に要素を配置できる)*/
+    text-align: left;/*行揃えの位置・均等割付を指定する(左寄せ)*/
 }
+
+#wrap img{
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
 h2  {
     font-size: 185%;
-    border-left: 15px solid #668800;
+    border-left: 20px solid #FF0099;/*左ボーダーのスタイル・太さ・色を指定する(1本線で表示)赤紫色*/
     /*border-top: 1px solid #000000;*/
-    padding-left: 10px;
+    padding-left: 10px;/*左パディングを指定する(パディングは領域内のスペース)*/
 }
 h3  {
-    padding: 5px;
-    border: 1px solid #668800;
+    padding: 1px;/*領域内のスペースを指定*/
+    border: 1px solid #668800;/*ボーダーのスタイル・太さ・色を指定する(1本線)緑色*/
     font-size: 154%;
-    clear: left;
+    clear: left;/*clearを使えば回り込みを解除することができます*/
 }
 h4  {
-    font-size: 124%;
+    font-size: 127%;
+    clear: both;
 }
 address{
     font-size: 85%;
-    font-style: normal;
-    text-align: right;
-    border-top: 1px solid #000000;
-    padding-top: 10px;
-    clear: left;
+    font-style: normal;/*フォントをイタリック体・斜体にする(標準フォントで表示します。これが初期値です。)*/
+    text-align: right;/*行揃えの位置・均等割付を指定する(右寄せ)*/
+    border-top: 1px solid #000000;/*上ボーダーのスタイル・太さ・色を指定する(1本線で表示されます)黒色*/
+    padding-top: 10px;/*上側の領域内のスペースを指定*/
+    clear: left;/*clearを使えば回り込みを解除することができます*/
 }
 table{
-    border: 1px solid #666666;
-    border-collapse: collapse;
+    border: 1px solid #666666;/*ボーダーのスタイル・太さ・色を指定する(1本線)灰色*/
+    border-collapse: collapse;/*セルのボーダーの表示の仕方を指定する*/
 }
 th{
-   border: 1px solid #999999;
-   padding: 10px;
-   background-color: #cccccc;
+   border: 1px solid #999999;/*ボーダーのスタイル・太さ・色を指定する(1本線)灰色*/
+   padding: 10px;/*領域内のスペースを指定*/
+   background-color: #cccccc;/*背景色を指定する灰色*/
 }
 td{
-    border: 1px solid #999999;
-    padding: 10px;
-    background-color: #eeeeee;
+    border: 1px solid #999999;/*ボーダーのスタイル・太さ・色を指定する(1本線)灰色*/
+    padding: 10px;/*領域内のスペースを指定*/
+    background-color: #eeeeee;/*背景色を指定する灰色*/
 }
 .itemphoto{
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 50px;
+    float: left;/*左または右に寄せて配置する*/
+    margin-right: 290px;/*外側右部の余白の値を指定*/
+    margin-bottom: 30px;/*4辺のうちの下部のみに指定が反映される。*/
 }
 /*
 ul{
@@ -72,39 +81,42 @@ li a:hover{
 }
 */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    color: #ffffff;
+    list-style-type: none;/*マークを使用しない*/
+    margin: 0;/**/
+    padding: 0;/**/
     font-size: 12px;
-    overflow: hidden;
-    background-color: #88aa00;
+    overflow: hidden;/**/
+    background-color: #FFCCCC;/*ピンク*/
+    clear: both;
+    margin-bottom: 10px;
 }
 li {
-    float: left;
-    margin-right: 0px;
-    width: 100px;
+    float: left;/**/
+    margin-right: 0px;/**/
+    width: 100px;/**/
     text-align: center;
-    border-right: solid; 1px #ffffff;
+    border-right: solid 1px #ffffff;/*白*/
 }
 li:first-chiild a {
-    border-left: solid 1px #ffffff;
+    border-left: solid 1px #ffffff;/*白*/
 }
 li a {
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    border-bottom: solid 5px transparent;
+    display: block;/**/
+    padding-top: 15px;/**/
+    padding-bottom: 10px;/**/
+    border-bottom: solid 5px transparent;/**/
 }
 li a:link{
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff;/*白*/
+    text-decoration: none;/**/
 }
 li a:visited{
-    color: #eeee00;
-    text-decoration: none;
+    color: #000000;/*黒*/
+    text-decoration: none;/**/
 }
 li a:hover {
-    color: #000000;
-    text-decoration: none;
-    border-bottom: solid 5px #CC9900;
+    color: #FF0000;/*赤*/
+    text-decoration: none;/**/
+    border-bottom: solid 5px #FFFF00;/*黄色*/
 }
